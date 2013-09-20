@@ -5,13 +5,22 @@ another smart wordpress exporter by [turing](https://npmjs.org/~turing)
 ### Installation
 ````
 $ npm install mua-wordpress
-// or install globally
-$ sudo npm install mua-wordpress -g
 ````
 
 ### Example
 ````javascript
-var mua-wordpress = require('mua-wordpress');
+var mw = require('mua-wordpress'),
+    fs = require('fs');
+
+mw.convert(fs.readFileSync('data.xml'),function(data){
+    // json-like wordpress data(contains articles and comments)
+    console.log(data);
+});
+
+// or import file instead.
+mw.import('data.xml', function(data){
+    console.log(data);
+});
 ````
 
 ### API

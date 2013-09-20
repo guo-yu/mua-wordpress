@@ -1,8 +1,10 @@
 {
   "name": "mua-wordpress",
-  "version": "0.0.0",
-  "description": "another smart wordpress exporter",
+  "version": "0.0.1",
+  "description": "a smart wordpress exporter of [Mua](http://mua.io)",
   "main": "index.js",
+  "author": "turing",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,15 +12,16 @@
     "type": "git",
     "url": "https://github.com/turingou/mua-wordpress.git"
   },
+  "bugs": {
+    "url": "https://github.com/turingou/mua-wordpress/issues"
+  },
   "keywords": [
     "mua",
     "wordpress",
     "export",
     "exporter"
   ],
-  "author": "turing",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/turingou/mua-wordpress/issues"
+  "dependencies": {
+    "node-xml-lite": "*"
   }
 }
