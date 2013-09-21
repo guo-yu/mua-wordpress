@@ -12,13 +12,13 @@ $ npm install mua-wordpress
 var mw = require('mua-wordpress'),
     fs = require('fs');
 
-mw.convert(fs.readFileSync('data.xml'),function(data){
+mw.convert(fs.readFileSync('data.xml'),function(err, data){
     // json-like wordpress data(contains articles and comments)
     console.log(data);
 });
 
 // or import file instead.
-mw.import('data.xml', function(data){
+mw.import('data.xml', function(err, data){
     console.log(data);
 });
 ````
